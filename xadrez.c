@@ -1,32 +1,36 @@
 #include <stdio.h>
+int main(){
+    int torre = 0;
+    int bispo = 0;
+    int rainha;
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+    printf("suas pecas se moveram da seguinte maneira: \n");
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    while(torre < 5)
+    {
+        torre++;
+        printf("torre : %d casas para a direita\n", torre);
+    }
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    printf("torre se moveu %d casas para a direita\n", torre);
+    printf("\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    do
+    {
+        bispo++;
+        printf("bispo : %d casas diagonal direita cima\n", bispo);
+    } while (bispo < 5);
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    printf("bispo se moveu %d casas para a diagonal direita cima", bispo);
+    printf("\n");
+    printf("\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    for(int esquerda = 1; esquerda <= 8; esquerda++)
+    {
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+        rainha = esquerda;
+        printf("rainha : %d casas para esquerda\n", rainha);
+    }
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
-
-    return 0;
+    printf("rainha se moveu %d casas para esquerda\n", rainha);
 }
